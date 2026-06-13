@@ -1,0 +1,10 @@
+# Pasta de configurações locais do Visual Studio (nunca commitar)
+.vs/
+
+# Binários compilados
+bin/
+obj/
+
+# Arquivos de usuário
+*.user
+*.suo

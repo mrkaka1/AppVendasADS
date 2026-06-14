@@ -28,91 +28,125 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.dgvListaProdutos = new System.Windows.Forms.DataGridView();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.btFiltrar = new System.Windows.Forms.Button();
+            this.txbCategoria = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txbNomeProd = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txbCategoria = new System.Windows.Forms.TextBox();
-            this.btFiltrar = new System.Windows.Forms.Button();
-            this.btLimpar = new System.Windows.Forms.Button();
-            this.dgvListaProdutos = new System.Windows.Forms.DataGridView();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvListaProdutos)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // dgvListaProdutos
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(776, 59);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Listar Produtos";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dgvListaProdutos.AllowUserToAddRows = false;
+            this.dgvListaProdutos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvListaProdutos.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaProdutos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvListaProdutos.EnableHeadersVisualStyles = false;
+            this.dgvListaProdutos.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.dgvListaProdutos.Location = new System.Drawing.Point(12, 171);
+            this.dgvListaProdutos.Name = "dgvListaProdutos";
+            this.dgvListaProdutos.ReadOnly = true;
+            this.dgvListaProdutos.RowHeadersVisible = false;
+            this.dgvListaProdutos.RowHeadersWidth = 51;
+            this.dgvListaProdutos.RowTemplate.Height = 24;
+            this.dgvListaProdutos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvListaProdutos.Size = new System.Drawing.Size(776, 271);
+            this.dgvListaProdutos.TabIndex = 46;
             // 
-            // txbNomeProd
+            // btLimpar
             // 
-            this.txbNomeProd.Location = new System.Drawing.Point(107, 120);
-            this.txbNomeProd.Name = "txbNomeProd";
-            this.txbNomeProd.Size = new System.Drawing.Size(188, 22);
-            this.txbNomeProd.TabIndex = 33;
+            this.btLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(110)))), ((int)(((byte)(110)))));
+            this.btLimpar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btLimpar.FlatAppearance.BorderSize = 0;
+            this.btLimpar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLimpar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btLimpar.ForeColor = System.Drawing.Color.White;
+            this.btLimpar.Location = new System.Drawing.Point(575, 118);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(100, 34);
+            this.btLimpar.TabIndex = 45;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = false;
             // 
-            // label2
+            // btFiltrar
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(103, 94);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 23);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "Nome do Produto:";
+            this.btFiltrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.btFiltrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btFiltrar.FlatAppearance.BorderSize = 0;
+            this.btFiltrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btFiltrar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btFiltrar.ForeColor = System.Drawing.Color.White;
+            this.btFiltrar.Location = new System.Drawing.Point(465, 118);
+            this.btFiltrar.Name = "btFiltrar";
+            this.btFiltrar.Size = new System.Drawing.Size(100, 34);
+            this.btFiltrar.TabIndex = 44;
+            this.btFiltrar.Text = "Filtrar";
+            this.btFiltrar.UseVisualStyleBackColor = false;
+            // 
+            // txbCategoria
+            // 
+            this.txbCategoria.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbCategoria.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbCategoria.Location = new System.Drawing.Point(265, 123);
+            this.txbCategoria.Name = "txbCategoria";
+            this.txbCategoria.Size = new System.Drawing.Size(180, 30);
+            this.txbCategoria.TabIndex = 43;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(322, 94);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label3.Location = new System.Drawing.Point(265, 97);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(88, 23);
-            this.label3.TabIndex = 34;
+            this.label3.TabIndex = 42;
             this.label3.Text = "Categoria:";
             // 
-            // txbCategoria
+            // txbNomeProd
             // 
-            this.txbCategoria.Location = new System.Drawing.Point(326, 120);
-            this.txbCategoria.Name = "txbCategoria";
-            this.txbCategoria.Size = new System.Drawing.Size(160, 22);
-            this.txbCategoria.TabIndex = 35;
+            this.txbNomeProd.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbNomeProd.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbNomeProd.Location = new System.Drawing.Point(30, 123);
+            this.txbNomeProd.Name = "txbNomeProd";
+            this.txbNomeProd.Size = new System.Drawing.Size(210, 30);
+            this.txbNomeProd.TabIndex = 41;
             // 
-            // btFiltrar
+            // label2
             // 
-            this.btFiltrar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btFiltrar.Location = new System.Drawing.Point(510, 110);
-            this.btFiltrar.Name = "btFiltrar";
-            this.btFiltrar.Size = new System.Drawing.Size(80, 32);
-            this.btFiltrar.TabIndex = 36;
-            this.btFiltrar.Text = "Filtrar";
-            this.btFiltrar.UseVisualStyleBackColor = true;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label2.Location = new System.Drawing.Point(30, 97);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(153, 23);
+            this.label2.TabIndex = 40;
+            this.label2.Text = "Nome do Produto:";
             // 
-            // btLimpar
+            // label1
             // 
-            this.btLimpar.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimpar.Location = new System.Drawing.Point(604, 110);
-            this.btLimpar.Name = "btLimpar";
-            this.btLimpar.Size = new System.Drawing.Size(80, 32);
-            this.btLimpar.TabIndex = 37;
-            this.btLimpar.Text = "Limpar";
-            this.btLimpar.UseVisualStyleBackColor = true;
-            // 
-            // dgvListaProdutos
-            // 
-            this.dgvListaProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvListaProdutos.Location = new System.Drawing.Point(12, 167);
-            this.dgvListaProdutos.Name = "dgvListaProdutos";
-            this.dgvListaProdutos.RowHeadersWidth = 51;
-            this.dgvListaProdutos.RowTemplate.Height = 24;
-            this.dgvListaProdutos.Size = new System.Drawing.Size(776, 271);
-            this.dgvListaProdutos.TabIndex = 38;
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(800, 70);
+            this.label1.TabIndex = 39;
+            this.label1.Text = "Listar Produtos";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormListarProdutos
             // 
@@ -137,13 +171,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvListaProdutos;
+        private System.Windows.Forms.Button btLimpar;
+        private System.Windows.Forms.Button btFiltrar;
+        private System.Windows.Forms.TextBox txbCategoria;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txbNomeProd;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbCategoria;
-        private System.Windows.Forms.Button btFiltrar;
-        private System.Windows.Forms.Button btLimpar;
-        private System.Windows.Forms.DataGridView dgvListaProdutos;
+        private System.Windows.Forms.Label label1;
     }
 }

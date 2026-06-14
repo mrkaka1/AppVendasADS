@@ -28,132 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btCancelarProd = new System.Windows.Forms.Button();
-            this.btCadastrarProd = new System.Windows.Forms.Button();
-            this.txbQtdEstoque = new System.Windows.Forms.TextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.btCancelarCli = new System.Windows.Forms.Button();
+            this.btCadastrarCli = new System.Windows.Forms.Button();
+            this.txbTelefone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txbValorUnitario = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txbCategoria = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txbNomeProd = new System.Windows.Forms.TextBox();
+            this.txbNome = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // btCancelarProd
+            // maskedTextBox1
             // 
-            this.btCancelarProd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCancelarProd.Location = new System.Drawing.Point(425, 326);
-            this.btCancelarProd.Name = "btCancelarProd";
-            this.btCancelarProd.Size = new System.Drawing.Size(142, 49);
-            this.btCancelarProd.TabIndex = 29;
-            this.btCancelarProd.Text = "Cancelar";
-            this.btCancelarProd.UseVisualStyleBackColor = true;
+            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.maskedTextBox1.Location = new System.Drawing.Point(190, 211);
+            this.maskedTextBox1.Mask = "000.000.000-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(200, 30);
+            this.maskedTextBox1.TabIndex = 63;
             // 
-            // btCadastrarProd
+            // btCancelarCli
             // 
-            this.btCadastrarProd.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btCadastrarProd.Location = new System.Drawing.Point(252, 326);
-            this.btCadastrarProd.Name = "btCadastrarProd";
-            this.btCadastrarProd.Size = new System.Drawing.Size(142, 49);
-            this.btCadastrarProd.TabIndex = 28;
-            this.btCadastrarProd.Text = "Cadastrar";
-            this.btCadastrarProd.UseVisualStyleBackColor = true;
+            this.btCancelarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btCancelarCli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCancelarCli.FlatAppearance.BorderSize = 0;
+            this.btCancelarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCancelarCli.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btCancelarCli.ForeColor = System.Drawing.Color.White;
+            this.btCancelarCli.Location = new System.Drawing.Point(410, 402);
+            this.btCancelarCli.Name = "btCancelarCli";
+            this.btCancelarCli.Size = new System.Drawing.Size(130, 42);
+            this.btCancelarCli.TabIndex = 62;
+            this.btCancelarCli.Text = "Cancelar";
+            this.btCancelarCli.UseVisualStyleBackColor = false;
             // 
-            // txbQtdEstoque
+            // btCadastrarCli
             // 
-            this.txbQtdEstoque.Location = new System.Drawing.Point(248, 250);
-            this.txbQtdEstoque.Name = "txbQtdEstoque";
-            this.txbQtdEstoque.Size = new System.Drawing.Size(401, 22);
-            this.txbQtdEstoque.TabIndex = 27;
+            this.btCadastrarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.btCadastrarCli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCadastrarCli.FlatAppearance.BorderSize = 0;
+            this.btCadastrarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCadastrarCli.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btCadastrarCli.ForeColor = System.Drawing.Color.White;
+            this.btCadastrarCli.Location = new System.Drawing.Point(260, 402);
+            this.btCadastrarCli.Name = "btCadastrarCli";
+            this.btCadastrarCli.Size = new System.Drawing.Size(130, 42);
+            this.btCadastrarCli.TabIndex = 61;
+            this.btCadastrarCli.Text = "Cadastrar";
+            this.btCadastrarCli.UseVisualStyleBackColor = false;
+            // 
+            // txbTelefone
+            // 
+            this.txbTelefone.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbTelefone.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbTelefone.Location = new System.Drawing.Point(190, 347);
+            this.txbTelefone.Name = "txbTelefone";
+            this.txbTelefone.Size = new System.Drawing.Size(420, 30);
+            this.txbTelefone.TabIndex = 60;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(129, 248);
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label5.Location = new System.Drawing.Point(190, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(113, 23);
-            this.label5.TabIndex = 26;
-            this.label5.Text = "Qtd. Estoque:";
+            this.label5.Size = new System.Drawing.Size(78, 23);
+            this.label5.TabIndex = 59;
+            this.label5.Text = "Telefone:";
             // 
-            // txbValorUnitario
+            // txbEmail
             // 
-            this.txbValorUnitario.Location = new System.Drawing.Point(254, 205);
-            this.txbValorUnitario.Name = "txbValorUnitario";
-            this.txbValorUnitario.Size = new System.Drawing.Size(395, 22);
-            this.txbValorUnitario.TabIndex = 25;
+            this.txbEmail.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbEmail.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbEmail.Location = new System.Drawing.Point(190, 279);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(420, 30);
+            this.txbEmail.TabIndex = 58;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(129, 203);
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label4.Location = new System.Drawing.Point(190, 253);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(119, 23);
-            this.label4.TabIndex = 24;
-            this.label4.Text = "Valor Unitário:";
-            // 
-            // txbCategoria
-            // 
-            this.txbCategoria.Location = new System.Drawing.Point(223, 160);
-            this.txbCategoria.Name = "txbCategoria";
-            this.txbCategoria.Size = new System.Drawing.Size(426, 22);
-            this.txbCategoria.TabIndex = 23;
+            this.label4.Size = new System.Drawing.Size(62, 23);
+            this.label4.TabIndex = 57;
+            this.label4.Text = "E-mail:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(129, 158);
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label3.Location = new System.Drawing.Point(190, 185);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 23);
-            this.label3.TabIndex = 22;
-            this.label3.Text = "Categoria:";
+            this.label3.Size = new System.Drawing.Size(44, 23);
+            this.label3.TabIndex = 56;
+            this.label3.Text = "CPF:";
             // 
-            // txbNomeProd
+            // txbNome
             // 
-            this.txbNomeProd.Location = new System.Drawing.Point(288, 118);
-            this.txbNomeProd.Name = "txbNomeProd";
-            this.txbNomeProd.Size = new System.Drawing.Size(361, 22);
-            this.txbNomeProd.TabIndex = 21;
+            this.txbNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txbNome.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.txbNome.Location = new System.Drawing.Point(190, 143);
+            this.txbNome.Name = "txbNome";
+            this.txbNome.Size = new System.Drawing.Size(420, 30);
+            this.txbNome.TabIndex = 55;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(129, 116);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(40)))), ((int)(((byte)(40)))));
+            this.label2.Location = new System.Drawing.Point(190, 117);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(153, 23);
-            this.label2.TabIndex = 20;
-            this.label2.Text = "Nome do Produto:";
+            this.label2.Size = new System.Drawing.Size(61, 23);
+            this.label2.TabIndex = 54;
+            this.label2.Text = "Nome:";
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 7);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(776, 59);
-            this.label1.TabIndex = 19;
-            this.label1.Text = "Cadastrar Produtos";
+            this.label1.Size = new System.Drawing.Size(800, 70);
+            this.label1.TabIndex = 53;
+            this.label1.Text = "Cadastrar Clientes";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // FormCadastrarProduto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btCancelarProd);
-            this.Controls.Add(this.btCadastrarProd);
-            this.Controls.Add(this.txbQtdEstoque);
+            this.ClientSize = new System.Drawing.Size(800, 461);
+            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.btCancelarCli);
+            this.Controls.Add(this.btCadastrarCli);
+            this.Controls.Add(this.txbTelefone);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.txbValorUnitario);
+            this.Controls.Add(this.txbEmail);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txbCategoria);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txbNomeProd);
+            this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "FormCadastrarProduto";
@@ -165,15 +189,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button btCancelarProd;
-        private System.Windows.Forms.Button btCadastrarProd;
-        private System.Windows.Forms.TextBox txbQtdEstoque;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.Button btCancelarCli;
+        private System.Windows.Forms.Button btCadastrarCli;
+        private System.Windows.Forms.TextBox txbTelefone;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txbValorUnitario;
+        private System.Windows.Forms.TextBox txbEmail;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txbCategoria;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txbNomeProd;
+        private System.Windows.Forms.TextBox txbNome;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
     }

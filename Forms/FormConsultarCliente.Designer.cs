@@ -212,7 +212,9 @@
             this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbCliente);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormConsultarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormConsultarCliente";
             this.ResumeLayout(false);
             this.PerformLayout();

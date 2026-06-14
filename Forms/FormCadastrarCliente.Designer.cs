@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.mskCPF = new System.Windows.Forms.MaskedTextBox();
             this.btCancelarCli = new System.Windows.Forms.Button();
             this.btCadastrarCli = new System.Windows.Forms.Button();
             this.txbTelefone = new System.Windows.Forms.TextBox();
@@ -41,15 +41,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // maskedTextBox1
+            // mskCPF
             // 
-            this.maskedTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.maskedTextBox1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.maskedTextBox1.Location = new System.Drawing.Point(190, 211);
-            this.maskedTextBox1.Mask = "000,000,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(200, 30);
-            this.maskedTextBox1.TabIndex = 63;
+            this.mskCPF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.mskCPF.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.mskCPF.Location = new System.Drawing.Point(190, 211);
+            this.mskCPF.Mask = "000,000,000-00";
+            this.mskCPF.Name = "mskCPF";
+            this.mskCPF.Size = new System.Drawing.Size(200, 30);
+            this.mskCPF.TabIndex = 63;
             // 
             // btCancelarCli
             // 
@@ -90,6 +90,8 @@
             this.txbTelefone.Name = "txbTelefone";
             this.txbTelefone.Size = new System.Drawing.Size(420, 30);
             this.txbTelefone.TabIndex = 60;
+            this.txbTelefone.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbTelefone_KeyUp);
+            this.txbTelefone.Leave += new System.EventHandler(this.txbTelefone_Leave);
             // 
             // label5
             // 
@@ -110,6 +112,8 @@
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(420, 30);
             this.txbEmail.TabIndex = 58;
+            this.txbEmail.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbEmail_KeyUp);
+            this.txbEmail.Leave += new System.EventHandler(this.txbEmail_Leave);
             // 
             // label4
             // 
@@ -141,6 +145,8 @@
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(420, 30);
             this.txbNome.TabIndex = 55;
+            this.txbNome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbNome_KeyUp);
+            this.txbNome.Leave += new System.EventHandler(this.txbNome_Leave);
             // 
             // label2
             // 
@@ -170,7 +176,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 460);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mskCPF);
             this.Controls.Add(this.btCancelarCli);
             this.Controls.Add(this.btCadastrarCli);
             this.Controls.Add(this.txbTelefone);
@@ -181,9 +187,12 @@
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormCadastrarCliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCadastrarCliente";
             this.Load += new System.EventHandler(this.FormCadastrarCliente_Load);
+            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormCadastrarCliente_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -191,7 +200,7 @@
 
         #endregion
 
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox mskCPF;
         private System.Windows.Forms.Button btCancelarCli;
         private System.Windows.Forms.Button btCadastrarCli;
         private System.Windows.Forms.TextBox txbTelefone;

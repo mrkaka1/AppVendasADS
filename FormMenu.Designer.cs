@@ -48,6 +48,7 @@
             this.btListarProdutos.TabIndex = 1;
             this.btListarProdutos.Text = "Listar Produtos";
             this.btListarProdutos.UseVisualStyleBackColor = false;
+            this.btListarProdutos.Click += new System.EventHandler(this.btListarProdutos_Click);
             // 
             // btCadProduto
             // 
@@ -60,6 +61,7 @@
             this.btCadProduto.TabIndex = 2;
             this.btCadProduto.Text = "Cadastrar Produto";
             this.btCadProduto.UseVisualStyleBackColor = false;
+            this.btCadProduto.Click += new System.EventHandler(this.btCadProduto_Click);
             // 
             // btRegistrarVenda
             // 
@@ -72,6 +74,7 @@
             this.btRegistrarVenda.TabIndex = 3;
             this.btRegistrarVenda.Text = "Registrar Venda";
             this.btRegistrarVenda.UseVisualStyleBackColor = false;
+            this.btRegistrarVenda.Click += new System.EventHandler(this.btRegistrarVenda_Click);
             // 
             // btConsultarCliente
             // 
@@ -84,6 +87,7 @@
             this.btConsultarCliente.TabIndex = 6;
             this.btConsultarCliente.Text = "Consultar Cliente";
             this.btConsultarCliente.UseVisualStyleBackColor = false;
+            this.btConsultarCliente.Click += new System.EventHandler(this.btConsultarCliente_Click);
             // 
             // btCadCliente
             // 
@@ -96,6 +100,7 @@
             this.btCadCliente.TabIndex = 5;
             this.btCadCliente.Text = "Cadastrar Cliente";
             this.btCadCliente.UseVisualStyleBackColor = false;
+            this.btCadCliente.Click += new System.EventHandler(this.btCadCliente_Click);
             // 
             // btListarVendas
             // 
@@ -108,6 +113,7 @@
             this.btListarVendas.TabIndex = 4;
             this.btListarVendas.Text = "Listar Vendas";
             this.btListarVendas.UseVisualStyleBackColor = false;
+            this.btListarVendas.Click += new System.EventHandler(this.btListarVendas_Click);
             // 
             // label1
             // 
@@ -132,7 +138,9 @@
             this.Controls.Add(this.btRegistrarVenda);
             this.Controls.Add(this.btCadProduto);
             this.Controls.Add(this.btListarProdutos);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormMenu";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 

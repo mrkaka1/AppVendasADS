@@ -16,5 +16,10 @@ namespace AppVendasADS.Forms
         {
             InitializeComponent();
         }
+
+        private void btCadastrarCli_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -80,6 +80,7 @@
             this.btCadastrarCli.TabIndex = 61;
             this.btCadastrarCli.Text = "Cadastrar";
             this.btCadastrarCli.UseVisualStyleBackColor = false;
+            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click);
             // 
             // txbTelefone
             // 
@@ -180,7 +181,9 @@
             this.Controls.Add(this.txbNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "FormCadastrarProduto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCadastrarProduto";
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -52,8 +52,65 @@
     <Compile Include="FormMenu.Designer.cs">
       <DependentUpon>FormMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\FormCadastrarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCadastrarCliente.Designer.cs">
+      <DependentUpon>FormCadastrarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormCadastrarProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormCadastrarProduto.Designer.cs">
+      <DependentUpon>FormCadastrarProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormConsultarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormConsultarCliente.Designer.cs">
+      <DependentUpon>FormConsultarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormListarProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormListarProdutos.Designer.cs">
+      <DependentUpon>FormListarProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormListarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormListarVendas.Designer.cs">
+      <DependentUpon>FormListarVendas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormRegistrarVendas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormRegistrarVendas.Designer.cs">
+      <DependentUpon>FormRegistrarVendas.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormMenu.resx">
+      <DependentUpon>FormMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCadastrarCliente.resx">
+      <DependentUpon>FormCadastrarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormCadastrarProduto.resx">
+      <DependentUpon>FormCadastrarProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormConsultarCliente.resx">
+      <DependentUpon>FormConsultarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormListarProdutos.resx">
+      <DependentUpon>FormListarProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormListarVendas.resx">
+      <DependentUpon>FormListarVendas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormRegistrarVendas.resx">
+      <DependentUpon>FormRegistrarVendas.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -78,7 +135,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Contexto\" />
-    <Folder Include="Forms\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

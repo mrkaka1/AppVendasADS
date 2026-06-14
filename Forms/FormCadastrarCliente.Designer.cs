@@ -80,6 +80,7 @@
             this.btCadastrarCli.TabIndex = 61;
             this.btCadastrarCli.Text = "Cadastrar";
             this.btCadastrarCli.UseVisualStyleBackColor = false;
+            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click_1);
             // 
             // txbTelefone
             // 

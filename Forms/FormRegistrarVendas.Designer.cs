@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btCancelVenda = new System.Windows.Forms.Button();
             this.btSalvarVenda = new System.Windows.Forms.Button();
             this.dgvListaItemVenda = new System.Windows.Forms.DataGridView();
@@ -69,6 +69,7 @@
             this.btCancelVenda.TabIndex = 93;
             this.btCancelVenda.Text = "Cancelar Venda";
             this.btCancelVenda.UseVisualStyleBackColor = false;
+            this.btCancelVenda.Click += new System.EventHandler(this.btCancelVenda_Click);
             // 
             // btSalvarVenda
             // 
@@ -84,20 +85,21 @@
             this.btSalvarVenda.TabIndex = 92;
             this.btSalvarVenda.Text = "Salvar Venda";
             this.btSalvarVenda.UseVisualStyleBackColor = false;
+            this.btSalvarVenda.Click += new System.EventHandler(this.btSalvarVenda_Click);
             // 
             // dgvListaItemVenda
             // 
             this.dgvListaItemVenda.AllowUserToAddRows = false;
             this.dgvListaItemVenda.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvListaItemVenda.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvListaItemVenda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvListaItemVenda.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.dgvListaItemVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvListaItemVenda.EnableHeadersVisualStyles = false;
             this.dgvListaItemVenda.Font = new System.Drawing.Font("Segoe UI", 9F);
@@ -140,6 +142,7 @@
             this.btCancelItem.TabIndex = 89;
             this.btCancelItem.Text = "Cancelar Item";
             this.btCancelItem.UseVisualStyleBackColor = false;
+            this.btCancelItem.Click += new System.EventHandler(this.btCancelItem_Click);
             // 
             // btAdicionarItem
             // 
@@ -155,6 +158,7 @@
             this.btAdicionarItem.TabIndex = 88;
             this.btAdicionarItem.Text = "Adicionar";
             this.btAdicionarItem.UseVisualStyleBackColor = false;
+            this.btAdicionarItem.Click += new System.EventHandler(this.btAdicionarItem_Click);
             // 
             // txbQuant
             // 
@@ -262,6 +266,7 @@
             this.cmbProduto.Name = "cmbProduto";
             this.cmbProduto.Size = new System.Drawing.Size(270, 31);
             this.cmbProduto.TabIndex = 78;
+            this.cmbProduto.SelectedIndexChanged += new System.EventHandler(this.cmbProduto_SelectedIndexChanged);
             // 
             // txbNome
             // 
@@ -328,6 +333,7 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(270, 31);
             this.cmbCliente.TabIndex = 72;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             // 
             // label1
             // 

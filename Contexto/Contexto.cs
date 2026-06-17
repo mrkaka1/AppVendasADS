@@ -11,8 +11,7 @@ namespace AppVendasADS.Contexto
     {
         public static List<Cliente> Clientes = new List<Cliente>();
 
-        public static List<(int Id, string Nome, string Categoria, decimal ValorUnitario, int Estoque)> Produtos
-            = new List<(int, string, string, decimal, int)>();
+        public static List<Produto> Produtos = new List<Produto>();
 
         public static List<(int CodVenda, string CpfCliente, string NomeProduto, string Categoria, decimal ValorUnitario, int Quantidade, decimal Total)> Vendas
             = new List<(int, string, string, string, decimal, int, decimal)>();

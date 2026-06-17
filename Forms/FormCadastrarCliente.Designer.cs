@@ -50,10 +50,12 @@
             this.mskCPF.Name = "mskCPF";
             this.mskCPF.Size = new System.Drawing.Size(200, 30);
             this.mskCPF.TabIndex = 63;
+            this.mskCPF.Leave += new System.EventHandler(this.mskCPF_Leave);
             // 
             // btCancelarCli
             // 
             this.btCancelarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
+            this.btCancelarCli.CausesValidation = false;
             this.btCancelarCli.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btCancelarCli.FlatAppearance.BorderSize = 0;
             this.btCancelarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -65,6 +67,7 @@
             this.btCancelarCli.TabIndex = 62;
             this.btCancelarCli.Text = "Cancelar";
             this.btCancelarCli.UseVisualStyleBackColor = false;
+            this.btCancelarCli.Click += new System.EventHandler(this.btCancelarCli_Click);
             // 
             // btCadastrarCli
             // 
@@ -80,7 +83,7 @@
             this.btCadastrarCli.TabIndex = 61;
             this.btCadastrarCli.Text = "Cadastrar";
             this.btCadastrarCli.UseVisualStyleBackColor = false;
-            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click_1);
+            this.btCadastrarCli.Click += new System.EventHandler(this.btCadastrarCli_Click);
             // 
             // txbTelefone
             // 
@@ -112,7 +115,6 @@
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(420, 30);
             this.txbEmail.TabIndex = 58;
-            this.txbEmail.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbEmail_KeyUp);
             this.txbEmail.Leave += new System.EventHandler(this.txbEmail_Leave);
             // 
             // label4
@@ -145,7 +147,6 @@
             this.txbNome.Name = "txbNome";
             this.txbNome.Size = new System.Drawing.Size(420, 30);
             this.txbNome.TabIndex = 55;
-            this.txbNome.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txbNome_KeyUp);
             this.txbNome.Leave += new System.EventHandler(this.txbNome_Leave);
             // 
             // label2
@@ -192,7 +193,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FormCadastrarCliente";
             this.Load += new System.EventHandler(this.FormCadastrarCliente_Load);
-            this.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormCadastrarCliente_KeyUp);
             this.ResumeLayout(false);
             this.PerformLayout();
 

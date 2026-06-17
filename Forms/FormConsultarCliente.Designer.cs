@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.btCancelarCli = new System.Windows.Forms.Button();
-            this.btCadastrarCli = new System.Windows.Forms.Button();
+            this.btConfirmarCli = new System.Windows.Forms.Button();
             this.txbTelefone = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.txbEmail = new System.Windows.Forms.TextBox();
@@ -57,21 +57,23 @@
             this.btCancelarCli.TabIndex = 65;
             this.btCancelarCli.Text = "Cancelar";
             this.btCancelarCli.UseVisualStyleBackColor = false;
+            this.btCancelarCli.Click += new System.EventHandler(this.btCancelarCli_Click);
             // 
-            // btCadastrarCli
+            // btConfirmarCli
             // 
-            this.btCadastrarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
-            this.btCadastrarCli.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btCadastrarCli.FlatAppearance.BorderSize = 0;
-            this.btCadastrarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btCadastrarCli.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
-            this.btCadastrarCli.ForeColor = System.Drawing.Color.White;
-            this.btCadastrarCli.Location = new System.Drawing.Point(260, 422);
-            this.btCadastrarCli.Name = "btCadastrarCli";
-            this.btCadastrarCli.Size = new System.Drawing.Size(130, 42);
-            this.btCadastrarCli.TabIndex = 64;
-            this.btCadastrarCli.Text = "Confirmar";
-            this.btCadastrarCli.UseVisualStyleBackColor = false;
+            this.btConfirmarCli.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(80)))), ((int)(((byte)(160)))));
+            this.btConfirmarCli.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btConfirmarCli.FlatAppearance.BorderSize = 0;
+            this.btConfirmarCli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btConfirmarCli.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Bold);
+            this.btConfirmarCli.ForeColor = System.Drawing.Color.White;
+            this.btConfirmarCli.Location = new System.Drawing.Point(260, 422);
+            this.btConfirmarCli.Name = "btConfirmarCli";
+            this.btConfirmarCli.Size = new System.Drawing.Size(130, 42);
+            this.btConfirmarCli.TabIndex = 64;
+            this.btConfirmarCli.Text = "Confirmar";
+            this.btConfirmarCli.UseVisualStyleBackColor = false;
+            this.btConfirmarCli.Click += new System.EventHandler(this.btConfirmarCli_Click);
             // 
             // txbTelefone
             // 
@@ -181,6 +183,7 @@
             this.cmbCliente.Name = "cmbCliente";
             this.cmbCliente.Size = new System.Drawing.Size(420, 31);
             this.cmbCliente.TabIndex = 54;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.cmbCliente_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -200,7 +203,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(797, 483);
             this.Controls.Add(this.btCancelarCli);
-            this.Controls.Add(this.btCadastrarCli);
+            this.Controls.Add(this.btConfirmarCli);
             this.Controls.Add(this.txbTelefone);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txbEmail);
@@ -224,7 +227,7 @@
         #endregion
 
         private System.Windows.Forms.Button btCancelarCli;
-        private System.Windows.Forms.Button btCadastrarCli;
+        private System.Windows.Forms.Button btConfirmarCli;
         private System.Windows.Forms.TextBox txbTelefone;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txbEmail;

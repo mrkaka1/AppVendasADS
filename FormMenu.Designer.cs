@@ -35,6 +35,7 @@
             this.btCadCliente = new System.Windows.Forms.Button();
             this.btListarVendas = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btListarProdutos
@@ -126,11 +127,22 @@
             this.label1.Text = "Sistema de Vendas";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(298, 20);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(236, 25);
+            this.label2.TabIndex = 8;
+            this.label2.Text = "Kauan Marques da Luz";
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btConsultarCliente);
             this.Controls.Add(this.btCadCliente);
@@ -143,6 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -155,6 +168,7 @@
         private System.Windows.Forms.Button btCadCliente;
         private System.Windows.Forms.Button btListarVendas;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }
 
